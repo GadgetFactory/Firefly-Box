@@ -226,6 +226,18 @@
 <text x="-1.778" y="3.175" size="1.397" layer="96">&gt;VALUE</text>
 <pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="5V0">
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.778" y="3.175" size="1.397" layer="96">&gt;VALUE</text>
+<pin name="5V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-A4L-LOC" prefix="FRAME">
@@ -246,6 +258,31 @@ DIN A4, landscape with location and doc. field</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<gates>
+<gate name="A" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V0" prefix="5V0_PWR">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="5V0" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -12132,6 +12169,32 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X14" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND5" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND6" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND7" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND8" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND9" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND10" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="GND11" library="GadgetFactory" deviceset="GND" device=""/>
+<part name="3V3_PWR5" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR6" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR7" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR8" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR9" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR10" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR11" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="3V3_PWR12" library="GadgetFactory" deviceset="3V3" device=""/>
+<part name="5V0_PWR1" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR2" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR3" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR4" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR5" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR6" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR7" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR8" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR9" library="GadgetFactory" deviceset="5V0" device=""/>
+<part name="5V0_PWR10" library="GadgetFactory" deviceset="5V0" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12169,6 +12232,30 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="JP3" gate="A" x="203.2" y="81.28" rot="R90"/>
 <instance part="JP4" gate="A" x="22.86" y="104.14"/>
 <instance part="JP5" gate="A" x="22.86" y="83.82"/>
+<instance part="GND1" gate="A" x="114.3" y="96.52" rot="R270"/>
+<instance part="GND5" gate="A" x="114.3" y="119.38" rot="R270"/>
+<instance part="GND6" gate="A" x="154.94" y="101.6" rot="R90"/>
+<instance part="GND7" gate="A" x="154.94" y="78.74" rot="R90"/>
+<instance part="GND8" gate="A" x="78.74" y="81.28" rot="R180"/>
+<instance part="GND9" gate="A" x="55.88" y="81.28" rot="R180"/>
+<instance part="GND10" gate="A" x="182.88" y="111.76"/>
+<instance part="GND11" gate="A" x="205.74" y="111.76"/>
+<instance part="3V3_PWR5" gate="A" x="50.8" y="81.28"/>
+<instance part="3V3_PWR6" gate="A" x="73.66" y="81.28"/>
+<instance part="3V3_PWR7" gate="A" x="187.96" y="111.76" rot="R180"/>
+<instance part="3V3_PWR8" gate="A" x="210.82" y="111.76" rot="R180"/>
+<instance part="3V3_PWR9" gate="A" x="154.94" y="106.68" rot="R270"/>
+<instance part="3V3_PWR10" gate="A" x="154.94" y="83.82" rot="R270"/>
+<instance part="3V3_PWR11" gate="A" x="114.3" y="114.3" rot="R90"/>
+<instance part="3V3_PWR12" gate="A" x="114.3" y="91.44" rot="R90"/>
+<instance part="5V0_PWR1" gate="A" x="154.94" y="86.36" rot="R270"/>
+<instance part="5V0_PWR2" gate="A" x="154.94" y="109.22" rot="R270"/>
+<instance part="5V0_PWR3" gate="A" x="114.3" y="111.76" rot="R90"/>
+<instance part="5V0_PWR4" gate="A" x="114.3" y="88.9" rot="R90"/>
+<instance part="5V0_PWR5" gate="A" x="190.5" y="111.76" rot="R180"/>
+<instance part="5V0_PWR6" gate="A" x="213.36" y="111.76" rot="R180"/>
+<instance part="5V0_PWR7" gate="A" x="71.12" y="81.28"/>
+<instance part="5V0_PWR8" gate="A" x="48.26" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -12439,6 +12526,108 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <label x="129.54" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="GND" class="2">
+<segment>
+<pinref part="AH1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AL1" gate="G$1" pin="GND"/>
+<pinref part="GND5" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AL2" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AH2" gate="G$1" pin="GND"/>
+<pinref part="GND7" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BUS2" gate="G$1" pin="GND"/>
+<pinref part="GND8" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BUS1" gate="G$1" pin="GND"/>
+<pinref part="GND9" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BUS3" gate="G$1" pin="GND"/>
+<pinref part="GND10" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BUS4" gate="G$1" pin="GND"/>
+<pinref part="GND11" gate="A" pin="GND"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="BUS1" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR5" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="BUS2" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR6" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="BUS3" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR7" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="BUS4" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR8" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="AL2" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR9" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="AH2" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR10" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="AL1" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR11" gate="A" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="AH1" gate="G$1" pin="3V3"/>
+<pinref part="3V3_PWR12" gate="A" pin="3V3"/>
+</segment>
+</net>
+<net name="5V0" class="0">
+<segment>
+<pinref part="AH2" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR1" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="AL2" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR2" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="AL1" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR3" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="AH1" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR4" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="BUS3" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR5" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="BUS4" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR6" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="BUS2" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR7" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<pinref part="BUS1" gate="G$1" pin="5V"/>
+<pinref part="5V0_PWR8" gate="A" pin="5V0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12543,6 +12732,8 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="R10" gate="A" x="292.1" y="-35.56" rot="R270"/>
 <instance part="R11" gate="A" x="335.28" y="-38.1" rot="R270"/>
 <instance part="CONN2" gate="USB" x="-116.84" y="-2.54"/>
+<instance part="5V0_PWR9" gate="A" x="-81.28" y="2.54"/>
+<instance part="5V0_PWR10" gate="A" x="-38.1" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -12861,25 +13052,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="149.86" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <label x="142.24" y="73.66" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="UGND"/>
-</segment>
-</net>
-<net name="5V" class="3">
-<segment>
-<wire x1="-81.28" y1="0" x2="-81.28" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
-<label x="-91.44" y="0" size="1.778" layer="95" rot="MR0"/>
-<label x="-78.74" y="10.16" size="1.778" layer="95"/>
-<pinref part="CONN2" gate="USB" pin="VUSB"/>
-<wire x1="-101.6" y1="0" x2="-111.76" y2="0" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<wire x1="-7.62" y1="71.12" x2="-27.94" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="71.12" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="58.42" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="58.42" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
-<label x="-35.56" y="58.42" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="I2C-SDA" class="0">
@@ -13335,6 +13507,24 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="129.54" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
 <label x="142.24" y="127" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="VCC1"/>
+</segment>
+</net>
+<net name="5V0" class="0">
+<segment>
+<wire x1="-101.6" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
+<label x="-91.44" y="0" size="1.778" layer="95" rot="MR0"/>
+<pinref part="CONN2" gate="USB" pin="VUSB"/>
+<wire x1="-101.6" y1="0" x2="-111.76" y2="0" width="0.2032" layer="91"/>
+<pinref part="5V0_PWR9" gate="A" pin="5V0"/>
+</segment>
+<segment>
+<wire x1="-7.62" y1="71.12" x2="-27.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="71.12" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="58.42" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="58.42" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
+<label x="-35.56" y="58.42" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="VBUS"/>
+<pinref part="5V0_PWR10" gate="A" pin="5V0"/>
 </segment>
 </net>
 </nets>
