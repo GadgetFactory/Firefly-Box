@@ -12833,7 +12833,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <part name="JP2" library="pinhead" deviceset="PINHD-1X15" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X14" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="GND5" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="GND6" library="GadgetFactory" deviceset="GND" device=""/>
@@ -12952,7 +12951,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <instance part="JP2" gate="A" x="236.22" y="96.52" rot="R180"/>
 <instance part="JP3" gate="A" x="203.2" y="81.28" rot="R90"/>
 <instance part="JP4" gate="A" x="22.86" y="104.14"/>
-<instance part="JP5" gate="A" x="22.86" y="83.82"/>
 <instance part="GND1" gate="A" x="114.3" y="96.52" rot="R270"/>
 <instance part="GND5" gate="A" x="114.3" y="119.38" rot="R270"/>
 <instance part="GND6" gate="A" x="154.94" y="101.6" rot="R90"/>
